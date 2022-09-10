@@ -29,8 +29,7 @@ class Game:
                         # change flair according to the reply
                         sub.flair.set(self.user, css_class=flair_css_dic[reply_content])
                         # return comment to the author
-                        comment.reply(
-                            body=f"恭喜,可爱的{self.user},您已经成为 {reply_content} 的一员,已为您颁发学院flair! ")
+                        comment.reply(body=f"恭喜,可爱的{self.user},您已经成为 {reply_content} 的一员,已为您颁发学院flair! ")
                         print(f"已为 {self.user} 颁发 {reply_content} 学院flair! ")
                         self.update_succeed_users()
                         self.read_users()
